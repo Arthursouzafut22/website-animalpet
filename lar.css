@@ -1,0 +1,133 @@
+
+#lar {
+    background-image: url(./img/banner/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.lar2 {
+    max-width: 1350px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lar-conteudo {
+    width: 100%;
+    padding: 0 0.9375rem 0 0.9375rem;
+
+}
+
+.lar-conteudo h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.6875rem;
+    width: 100%;
+    font-weight: 100;
+    margin-bottom:0px;
+}
+
+.lar-conteudo :nth-child(2) {
+    font-size: 4.6875rem;
+    width: 100%;
+    font-weight: 800;
+    margin: 0px;
+}
+.lar-conteudo :nth-child(3) {
+    max-width: 390px;
+    width: 100%;
+    line-height: 30px;
+}
+
+.lar-conteudo p {
+    margin-top: 0px;
+    color: white;
+}
+
+.btn-lar {
+    color: #FF3500;
+    background-color: white;
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 1.25rem 3.75rem 1.25rem  3.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+
+.img-gato {
+    width: 80%;
+    width: 800px;
+    align-self: end;
+    margin-top: 75px;
+    animation: animaCat .3s forwards ;
+}
+
+@keyframes animaCat {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        
+    }
+}
+
+@media (max-width:763px) {
+    .img-gato {
+        display: none;
+    }
+    .lar-conteudo {
+        margin-top: 55px;
+    }
+    .lar-conteudo h1 {
+        font-size: 2.5rem;
+    }
+    .lar-conteudo > p > p {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+    .lar-conteudo :nth-child(3) {
+        margin-top: 10px;
+    }
+    .anima-estima {
+        font-size: 2.5rem !important;
+    }
+    .btn-lar {
+        font-size: 16px;
+        padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+        margin-top: 20px;
+
+    }
+}
+
+@media (min-width:767px) and (max-width:990px) {
+    .img-gato {
+        display: none;
+    }
+    .lar-conteudo {
+        margin-top: 55px;
+    }
+    .lar-conteudo h1 {
+        font-size: 2.5rem;
+    }
+    .lar-conteudo > p > p {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+    .anima-estima {
+        font-size: 2.5rem !important;
+    }
+    .btn-lar {
+        font-size: 16px;
+        padding: 1.25rem 2.5rem 1.25rem 2.5rem;
+        margin-top: 20px;
+    }
+
+}

@@ -1,0 +1,80 @@
+
+#contato {
+    width: 100%;
+    margin: 150px auto;
+    background-image: url(./img/contato/contact_bg.png);
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;
+    overflow: hidden;
+   
+}
+
+.contato-2 {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+.contato-2 :nth-child(1) {
+    font-size: 3.125rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 22px;
+    width: 100%;
+}
+
+.contato-2 :nth-child(2) {
+    color: white;
+    max-width:700px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5625rem ;
+    line-height: 40px;
+}
+
+.contato-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 250px;
+    margin:40px auto;
+   
+   
+}
+
+.contato-info p {
+    display:block;
+    font-size: 0.625rem;
+    margin: 0;
+}
+
+.btn-contato {
+    display: block;
+    background-color: white;
+    align-self: end;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.a-info {
+    margin: 0 auto;
+    
+}
+
+@media (max-width:763px) {
+    .contato-2 :nth-child(1) {
+        font-size: 1.5625rem;
+    }
+    .contato-2 :nth-child(2) {
+        font-size: 1.125rem;
+        max-width: 450px;
+        width: 100%;
+    }
+
+}
+

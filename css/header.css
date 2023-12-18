@@ -1,0 +1,355 @@
+
+
+.informacao-header {
+    background-color: #1C1818;
+    width: 100%;
+   
+}
+
+.informacao-header2 {
+    display: flex;
+    align-items: center;
+    max-width: 1350px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.informacao-header button {
+    color: aliceblue;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.redes-socias  {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes-socias a img {
+ width: 26px;
+}
+
+.redes-socias a {
+    display: block;
+}
+
+.informacoes {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 40px;
+}
+.informacoes p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 0.9375rem 0.625rem 0.625rem 0.625rem;
+    max-width: 1350px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+.menu li a {
+    font-size: 1.0625rem;
+    color: #102955;
+    font-family: 'Poppins', sans-serif;
+}
+
+[data-dropdow] {
+    position: relative;
+}
+
+[data-dropdow] .dropdow-menu {
+    display: none;
+}
+
+[data-dropdow]:hover .dropdow-menu,
+[data-dropdow].active .dropdow-menu {
+    display: block;
+    animation: drop .3s forwards;
+}
+
+[data-dropdow] a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+@keyframes drop {
+    from {
+        opacity: 0;
+        transform: translate3d(0,30px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+.dropdow-menu {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    padding: 0 1.25rem 0 1.25rem ;
+    width: 150px;
+    z-index: 200;
+}
+.dropdow-menu li a {
+    text-align: left !important;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.3125rem 0  0.3125rem 0;
+}
+.dropdow-menu li a:hover {
+    color: #FF3500;
+}
+.btn-mobile {
+    display: none;
+}
+
+
+@media (max-width:763px) {
+    .redes-socias a img {
+        width: 22px;
+    }
+    .informacao-header2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .informacoes {
+        gap: 20px;
+    }
+    .informacoes p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .redes-socias {
+        padding-bottom: 0.625rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        width: 300px;
+        z-index: 1000;
+        background-color: #FFFFFF;
+        top: 122px;
+        height: 210px;
+        animation: mobi .3s forwards;
+        box-shadow: 0px 14px 8px -4px rgba(150, 150, 150, 0.24);
+        right: 0px;
+        padding: 1.5625rem 0 0 0;
+       
+    }
+
+    @keyframes mobi {
+        from {
+            opacity: 0;
+            transform: translate3d(30px, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .menu li a {
+        text-align: center;
+        margin-left: 15px;
+
+    }
+
+    .menu :nth-child(1) {
+        margin-bottom: 5px;
+    }
+    .menu :nth-child(2) {
+        margin-bottom: 5px;
+    }
+    .menu :nth-child(5) {
+        margin-bottom: 5px;
+    }
+    .menu :nth-child(6) {
+        margin-bottom: 5px;
+    }
+    [data-dropdow] > a  img{
+        display: flex;
+        align-items: center;
+    }
+    .btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        gap: 3rem;
+
+    }
+    #hamburgue {
+        border-top: 4px solid;
+        width: 38px;
+        display: block;
+    }
+    #hamburgue::after, #hamburgue::before {
+        width: 38px;
+        height: 4px;
+        background-color: currentColor;
+        content: '';
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    .nav-menu.ativo #hamburgue {
+        border-top-color: transparent;
+    }
+    .nav-menu.ativo  #hamburgue::before {
+        transform: rotate(135deg);
+    }
+    .nav-menu.ativo  #hamburgue::after {
+        transform: rotate(-135deg);
+        top: -9px;
+    } 
+
+   .nav-menu.ativo .menu {
+      display: block;
+    }
+
+    .header {
+        padding:  0.625rem 2.1875rem 0.625rem 2.1875rem;
+       
+    }
+    
+}
+
+
+@media (min-width:767px) and (max-width:990px) {
+    .informacao-header2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .informacoes > p {
+        font-size: 16px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        width: 300px;
+        z-index: 1000;
+        background-color: #FFFFFF;
+        top: 90px;
+        padding:  0.625rem 0 0 0;
+        height: 220px;
+        animation: mobi .3s forwards;
+        box-shadow: 0px 14px 8px -4px rgba(150, 150, 150, 0.24);
+        right: 0px;
+    }
+
+    @keyframes mobi {
+        from {
+            opacity: 0;
+            transform: translate3d(30px, 0, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .menu li a {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .menu :nth-child(1) {
+        margin-bottom: 5px;
+    }
+    .menu :nth-child(2) {
+        margin-bottom: 5px;
+    }
+    .menu :nth-child(5) {
+        margin-bottom: 5px;
+    }
+    .menu :nth-child(6) {
+        margin-bottom: 5px;
+    }
+    [data-dropdow] > a  img{
+        display: flex;
+        align-items: center;
+    }
+    .btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        gap: 3rem;
+
+    }
+    #hamburgue {
+        border-top: 4px solid;
+        width: 35px;
+        display: block;
+    }
+    #hamburgue::after, #hamburgue::before {
+        width: 35px;
+        height: 4px;
+        background-color: currentColor;
+        content: '';
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    .nav-menu.ativo #hamburgue {
+        border-top-color: transparent;
+    }
+    .nav-menu.ativo  #hamburgue::before {
+        transform: rotate(135deg);
+    }
+    .nav-menu.ativo  #hamburgue::after {
+        transform: rotate(-135deg);
+        top: -9px;
+    } 
+
+   .nav-menu.ativo .menu {
+      display: block;
+    }
+
+    .header {
+        padding:  0.625rem 2.1875rem 0.625rem 2.1875rem;
+       
+    }
+    
+    
+
+}
+
