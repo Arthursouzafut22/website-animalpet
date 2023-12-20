@@ -19,7 +19,11 @@ Anipat é um modelo de site de cuidados com animais de estimação  HTML5  para 
 
 • Design limpo e minimalista  
 • Totalmente responsivo   
-• Menu suspenso  
+• Menu suspenso   
+
+## Autor 
+
+•Frontend - @Arthursouzafut22
 
 
 
